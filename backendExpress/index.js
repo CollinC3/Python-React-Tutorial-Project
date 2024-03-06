@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const port = 5000;
-const uri = 'mongodb+srv://CollinC3:Collsta1$@test-for-full-stack.xmzfkxh.mongodb.net/?retryWrites=true&w=majority&appName=Test-for-Full-Stack'
+const uri = 'mongodb+srv://CollinC3:<password>@test-for-full-stack.xmzfkxh.mongodb.net/?retryWrites=true&w=majority&appName=Test-for-Full-Stack'
 // app.use(express.json());
 // app.use(cors());
 
