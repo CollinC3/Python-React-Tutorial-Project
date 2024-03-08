@@ -17,7 +17,7 @@ const ContactList = ({ contacts, updateContact, updateCallback }) => {
             alert(error)
         }
     }
-    
+
     return <div>
         <h2>Contacts</h2>
         <table>
@@ -31,13 +31,13 @@ const ContactList = ({ contacts, updateContact, updateCallback }) => {
             </thead>
             <tbody>
                 {contacts.map((contact) =>
-                    <tr key={contact.id}>
+                    <tr key={contact._id}>
                         <td>{contact.firstName}</td>
                         <td>{contact.lastName}</td>
                         <td>{contact.email}</td>
                         <td>
                             <button onClick={() => updateContact(contact)}>Update</button>
-                            <button onClick={() => onDelete(contact.id)}>Delete</button>
+                            <button onClick={() => onDelete(contact._id)}>Delete</button>
                         </td>
                     </tr>
                 )}
