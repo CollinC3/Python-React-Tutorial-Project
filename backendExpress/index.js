@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const port = 5000;
-const uri = 'mongodb+srv://CollinC3:Collsta1$@test-for-full-stack.xmzfkxh.mongodb.net/?retryWrites=true&w=majority&appName=Test-for-Full-Stack'
+const uri = '' // put mongodb link here
 const Contact = require('./models/contactModal')
 
 app.use(express.json());
